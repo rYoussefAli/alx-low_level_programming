@@ -28,7 +28,7 @@ int main(void)
 		sprintf(ss, "and is less than 6 and not 0");
 	}
 
-	printf("The last digit of %d is %d %s\n", n, l, ss);
+	printf("Last digit of %d is %d %s\n", n, l, ss);
 
 	return (0);
 }
