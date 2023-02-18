@@ -7,16 +7,28 @@
 int main(void)
 {
 	int n;
+	int l;
+	char ss[30];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
+	l = abs(n) % 10;
+
+	if (l > 5)
+	{
+		sprintf(ss, "and is greater than 5");
+	}
+	else if (l == 0)
+	{
+		sprintf(ss, "and is 0");
+	}
 	else
-		printf("%d is zero\n", n);
+	{
+		sprintf(ss, "and is less than 6 and not 0");
+	}
+
+	printf("The last digit of %d is %d %s\n", n, l, ss);
 
 	return (0);
 }
