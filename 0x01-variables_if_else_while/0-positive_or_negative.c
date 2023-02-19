@@ -8,7 +8,7 @@
 /**
  * main - Entry point
  *
- * Description: Here should be a desctription
+ * Description: Here should be a description
  *
  * Return: Always 0 (Success)
  */
