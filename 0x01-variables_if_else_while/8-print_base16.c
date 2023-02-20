@@ -17,7 +17,7 @@ int main(void)
 	int ch;
 
 	for (ch = 0; ch < 16; ch++)
-		ch < 10 ? putchar(ch + '0') : putchar(ch-10 + 'a');
+		ch < 10 ? putchar(ch + '0') : putchar(ch - 10 + 'a');
 
 	putchar('\n');
 
