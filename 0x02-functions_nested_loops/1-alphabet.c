@@ -12,8 +12,8 @@ void print_alphabet(void)
 
 	while (letter <= 'z')
 	{
-		printf("%c", letter);
+		putchar(letter);
 		letter++;
 	}
-	printf("\n");
+	putchar('\n');
 }
