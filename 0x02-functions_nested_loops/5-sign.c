@@ -3,23 +3,22 @@
  * print_sign - checks the parity of the number
  * @n: the parameter
  *
- * Return: returns 1, 0, or -1 (sucess).
+ * Return: returns 1, 0, or -1 (success).
  */
 int print_sign(int n)
 {
-	if (n > 0)
-	{
-		putchar('+');
-		return (1);
-	}
-	else if (n == 0)
-	{
+	if (!n) {
 		putchar('0');
-		return (0);
+		return 0;
 	}
-	else
-	{
-		putchar('-');
-		return (-1);
+	else {
+		if (n > 0) {
+			putchar('+');
+			return 1;
+		}
+		else {
+			putchar ('-');
+			return -1;
+		}
 	}
 }
