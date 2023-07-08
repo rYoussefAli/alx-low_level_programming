@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- * main - The main function of the code
- * params: string
+ * _print_rev_recursion - print rev
+ * @s: the first param
  *
- * Return: void (success)
+ * Return: void
  */
 void _print_rev_recursion(char *s)
 {
@@ -12,7 +11,7 @@ void _print_rev_recursion(char *s)
 	{
 		return;
 	}
-	else 
+	else
 	{
 		_print_rev_recursion(s + 1);
 		_putchar(*s);

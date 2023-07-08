@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- * main - The main function of the code
- * params: string
+ * _print_recursion - print rev
+ * @s: the first param
  *
- * Return: void (success)
+ * Return: void
  */
 void _puts_recursion(char *s)
 {
