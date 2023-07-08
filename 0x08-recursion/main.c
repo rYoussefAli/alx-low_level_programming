@@ -2,6 +2,8 @@
 #include <stdio.h>
 
 int main() {
-	_print_rev_recursion("LOL YA");
+	int g = _strlen_recursion("ZXC1");
+	putchar('Z');
+	putchar('0'+g);
 	return 0;
 }

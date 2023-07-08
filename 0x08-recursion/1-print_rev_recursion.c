@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - The main function of the code
+ * params: string
  *
- * Return: Always 0.
+ * Return: void (success)
  */
-
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
@@ -14,7 +14,7 @@ void _print_rev_recursion(char *s)
 	}
 	else 
 	{
-		_print_rev_recursion(s+1);
+		_print_rev_recursion(s + 1);
 		_putchar(*s);
 	}
 }
