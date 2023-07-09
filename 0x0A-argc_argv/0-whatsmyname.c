@@ -8,8 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
+	(void)argc;
 	char *i = argv[0];
-	
+
 	while(*i != '\0')
 	{
 		_putchar(*i);
