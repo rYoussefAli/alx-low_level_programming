@@ -13,7 +13,7 @@ int checker(int i, int *sum, int *c)
 	int ii = i;
 	int a = 0;
 
-	while (i < *c)
+	while (i <= *c)
 	{
 		a = i;
 		*sum += 1;
@@ -22,7 +22,7 @@ int checker(int i, int *sum, int *c)
 	if (a)
 	{
 		*c -= a;
-		if (!(*c - 1))
+		if (!(*c))
 		{
 			printf("%d\n", *sum);
 			return (1);
@@ -49,8 +49,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	c = atoi(argv[1]) + 1;
-	if (c < 2)
+	c = atoi(argv[1]);
+	if (c < 1)
 	{
 		printf("0\n");
 		return (0);
