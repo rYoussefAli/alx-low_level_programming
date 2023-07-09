@@ -1,23 +1,23 @@
 /**
  * mult - check the n
  * @n: the first param
- * @o: the original number
+ * @b: the original number
  *
  * Return: _sqrt_recursion
  */
 int mult(int n, int b)
 {
-	if (n*n == b)
+	if (n * n == b)
 	{
 		return (n);
 	}
-	if (n*n < b)
+	if (n * n < b)
 	{
-		return mult(n+1, b);
+		return (mult(n + 1, b));
 	}
 	return (-1);
 
-	
+
 }
 /**
  * _sqrt_recursion - _sqrt_recursion
@@ -27,5 +27,5 @@ int mult(int n, int b)
  */
 int _sqrt_recursion(int n)
 {
-	return mult(0, n);
+	return (mult(0, n));
 }
