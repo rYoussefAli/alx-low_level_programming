@@ -9,8 +9,7 @@ int help(int a, int b);
 
 /**
  * is_prime_number - is_prime_number
- * @a: the main num
- * @b: the descendents
+ * @n: the main num
  *
  * Return: is_prime_number? 1 : 0.
  */
@@ -20,6 +19,13 @@ int is_prime_number(int n)
 
 }
 
+/**
+ * help - help
+ * @a: the main num
+ * @b: the descendents
+ *
+ * Return: is_prime_number? 1 : 0.
+ */
 int help(int a, int b)
 {
 	if (a < 2)
