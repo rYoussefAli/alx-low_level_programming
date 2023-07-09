@@ -7,12 +7,13 @@
  * @argc: the number of arguments
  * @argv: the argument vector
  *
- * Return: multiply the two numbers given.
+ * Return: sum all numbers given.
  */
 int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i, c;
+	char *a;
 
 	if (argc < 2)
 	{
@@ -22,16 +23,19 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; ++i)
 	{
-		c = atoi(argv[i]);
+		a = argv[i];
 
-		if (c == 0)
+		while (*a != '\0')
 		{
-			if (*argv[i] != '0')
+			if (*a > '9' || *a < '0')
 			{
 				printf("Error\n");
 				return (1);
 			}
+			a++;
 		}
+		c = atoi(argv[i]);
+
 		sum += c;
 	}
 	printf("%d\n", sum);
