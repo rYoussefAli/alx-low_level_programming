@@ -10,20 +10,21 @@
  */
 int checker(int i, int *sum, int *c)
 {
+	int ii = i;
 	int a = 0;
 
 	while (i < *c)
 	{
 		a = i;
 		*sum += 1;
-		i += 25;
+		i += ii;
 	}
 	if (a)
 	{
 		*c -= a;
 		if (!(*c - 1))
 		{
-			printf("%d", *sum);
+			printf("%d\n", *sum);
 			return (1);
 		}
 	}
