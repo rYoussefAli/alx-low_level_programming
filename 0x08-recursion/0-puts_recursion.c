@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion - _puts_recursion 
+ * _puts_recursion - _puts_recursion
  * @s: the first param
  *
  * Return: void
