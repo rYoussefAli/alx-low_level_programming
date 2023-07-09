@@ -8,7 +8,6 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
 	char *i = argv[0];
 
 	while(*i != '\0')
@@ -16,5 +15,7 @@ int main(int argc, char *argv[])
 		_putchar(*i);
 		i++;
 	}
+	(void)argc;
+	
 	return (0);
 }
