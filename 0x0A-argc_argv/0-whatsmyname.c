@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 		_putchar(*i);
 		i++;
 	}
-	(void)argc;
 	
+	(void)argc;
+
 	return (0);
 }
