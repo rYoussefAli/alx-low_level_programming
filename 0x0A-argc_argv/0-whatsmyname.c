@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - main
@@ -8,13 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	char *i = argv[0];
-
-	while (*i != '\0')
-	{
-		_putchar(*i);
-		i++;
-	}
+	printf("%s", argv[0]);
 
 	(void)argc;
 
