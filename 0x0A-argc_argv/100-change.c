@@ -113,17 +113,18 @@ int checker(int i, int *sum, int *c)
 int main(int argc, char *argv[])
 {
 	int sum = 0;
-	int c;
-
-	int z = atoi(argv[1]);
-	char *n = argv[1];
-	int ln = len(argv[1]);
+	int c, z, ln;
+	char *n;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+
+	z = atoi(argv[1]);
+	n = argv[1];
+	ln = len(argv[1]);
 
 	if (z < 1)
 	{
@@ -143,7 +144,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", sum);
 		return (0);
 	}
-
 
 	if (checker(25, &sum, &c))
 	{
