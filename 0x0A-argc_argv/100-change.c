@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int c, z, ln;
-	char *n;
+	char *n = argv[1];
 
 	if (argc != 2)
 	{
@@ -123,7 +123,6 @@ int main(int argc, char *argv[])
 	}
 
 	z = atoi(argv[1]);
-	n = argv[1];
 	ln = len(argv[1]);
 
 	if (z < 1)

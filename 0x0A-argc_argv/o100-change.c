@@ -8,9 +8,9 @@
  * @c: the number given as argument
  * Return: 1 if done printing, 0 otherwise.
  */
-int checker(int i, int *sum, int *c)
+int checker(long int i, long int *sum, int *c)
 {
-	int ii = i;
+	long int ii = i;
 	int a = 0;
 
 	while (i <= *c)
@@ -24,7 +24,7 @@ int checker(int i, int *sum, int *c)
 		*c -= a;
 		if (!(*c))
 		{
-			printf("%d\n", *sum);
+			printf("%ld\n", *sum);
 			return (1);
 		}
 	}
@@ -41,7 +41,7 @@ int checker(int i, int *sum, int *c)
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	long int sum = 0;
 	int c;
 
 	if (argc != 2)
