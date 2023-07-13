@@ -6,7 +6,7 @@
  * create_array - create_array
  * @size: take the size of the array
  * @c: the initalizer char
- * Return - NULL if size = 0, memory allocation (array) otherwise
+ * Return: NULL if size = 0, memory allocation (array) otherwise
 **/
 char *create_array(unsigned int size, char c)
 {
