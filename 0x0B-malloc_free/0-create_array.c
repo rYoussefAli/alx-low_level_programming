@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h" 
+#include "main.h"
 
 /**
  * create_array - create_array
@@ -10,25 +10,25 @@
 **/
 char *create_array(unsigned int size, char c)
 {
-    unsigned int b;
-    char *v = NULL;
+	unsigned int b;
+	char *v = NULL;
 
-    if (size < 1)
-    {
-        return NULL;
-    }
+	if (size < 1)
+	{
+		return (NULL);
+	}
 
-    v = (char*)malloc(sizeof(char) * size);
+	v = (char *)malloc(sizeof(char) * size);
 
-    if (!v)
-    {
-        return NULL;
-    }
+	if (!v)
+	{
+		return (NULL);
+	}
 
-    for (b = 0; b < size; ++b)
-    {
-        v[b] = c;
-    }
-    
-    return (v);
+	for (b = 0; b < size; ++b)
+	{
+		v[b] = c;
+	}
+
+	return (v);
 }
