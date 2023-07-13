@@ -25,14 +25,14 @@ char *_strdup(char *str)
 
 	str -= n + 1;
 
-	v = (char *)malloc(sizeof(char) * n);
+	v = (char *)malloc(sizeof(char) * n + 1);
 
 	if (!v)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n + 1; i++)
 	{
 		v[i] = str[i];
 	}
