@@ -39,7 +39,7 @@ char *argstostr(int ac, char **av)
 		n += count(av[a]);
 	}
 
-	t = n + ac;
+	t = n + ac - 1;
 	str = (char *)malloc(sizeof(char) * t);
 
 	if (!str)
