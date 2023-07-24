@@ -3,10 +3,9 @@
 #include "main.h"
 
 /**
- * str_concat - str_concat
- * @s1: string 1
- * @s2: string 2
- * Return: concatenated string (free required after use)
+ * malloc_checked - malloc_checked
+ * @b: size
+ * Return: address to memory (free required after use)
 **/
 void *malloc_checked(unsigned int b)
 {
