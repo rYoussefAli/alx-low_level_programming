@@ -3,9 +3,11 @@
 #include "main.h"
 
 /**
- * malloc_checked - malloc_checked
- * @b: size
- * Return: address to memory (free required after use)
+ * string_nconcat - string_nconcat
+ * @s1: str1
+ * @s2: str2
+ * @n: max size of s2
+ * Return: concat s1 & s2 (free required after use)
 **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -32,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 -= n2 + 1;
 	}
 
-	if (n < n2)
+	if ((int)n < n2)
 	{
 		n2 = n;
 	}
